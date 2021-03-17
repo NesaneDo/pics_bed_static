@@ -1,7 +1,14 @@
-.shadow{
+.shadow {
     box-shadow: #adadad 1px 1px 16px;
 }
 
-.margin-8{
+.margin-8 {
     margin: 8px;
+}
+
+.auto-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 960px;
+    flex-wrap: wrap;
 }
