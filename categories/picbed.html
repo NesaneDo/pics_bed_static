@@ -68,45 +68,43 @@
     </div>
 </div>
 <script src="../js/view.js"></script>
+<script src="../js/img/getAlgorithmImgs.js"></script>
+<script src="../js/img/getAndroidImgs.js"></script>
+<script src="../js/img/getDataStructureImgs.js"></script>
+<script src="../js/img/getGitImgs.js"></script>
+<script src="../js/img/getBlogImgs.js"></script>
+<script src="../js/img/getJavaImgs.js"></script>
+<script src="../js/img/getPythonImgs.js"></script>
+<script src="../js/img/getOtherImgs.js"></script>
 <script>
-    const types = ['all', 'android', 'data-structure', 'git','blog', 'java', 'python', 'other']
+    const types = ['all','algorithm', 'android', 'data-structure', 'git','blog', 'java', 'python', 'other'];
     /**
      * 图片数组对象
      * @type array
      */
-    const images = [
-		// data-structure
-        {src: '/RBTree/红黑树 - 黑高 - 1.png', desc: '红黑树 - 黑高 - 1', type: 'data-structure'},
-        
-		// java
-		{src: '/call_webservice_with_java/1.png', desc: 'call_webservice_with_java_1', type: 'java'},
-		{src: '/call_webservice_with_java/2.png', desc: 'call_webservice_with_java_2', type: 'java'},
-		{src: '/call_webservice_with_java/3.png', desc: 'call_webservice_with_java_3', type: 'java'},
-		{src: '/call_webservice_with_java/4.png', desc: 'call_webservice_with_java_4', type: 'java'},
-		
-		// git
-		{src: '/update_commit_msg/1.png', desc: 'update_commit_msg_1', type: 'git'},
-		{src: '/update_commit_msg/2.png', desc: 'update_commit_msg_2', type: 'git'},
-		{src: '/update_commit_msg/3.png', desc: 'update_commit_msg_3', type: 'git'},
-		{src: '/update_commit_msg/4.png', desc: 'update_commit_msg_4', type: 'git'},
-		{src: '/update_commit_msg/5.png', desc: 'update_commit_msg_5', type: 'git'},
-		{src: '/update_commit_msg/6.png', desc: 'update_commit_msg_6', type: 'git'},
-		{src: '/update_commit_msg/7.png', desc: 'update_commit_msg_7', type: 'git'},
-		{src: '/update_commit_msg/8.png', desc: 'update_commit_msg_8', type: 'git'},
-		
-		// blog
-		{src: '/eclipse_failed_while_installing_java_when_create_web_dynamic_project/1.png', desc: 'eclipse_failed_while_installing_java_when_create_web_dynamic_project_1', type: 'blog'},
-		{src: '/eclipse_failed_while_installing_java_when_create_web_dynamic_project/2.png', desc: 'eclipse_failed_while_installing_java_when_create_web_dynamic_project_2', type: 'blog'},
-		{src: '/eclipse_failed_while_installing_java_when_create_web_dynamic_project/3.png', desc: 'eclipse_failed_while_installing_java_when_create_web_dynamic_project_3', type: 'blog'},
-		
-		
-		
-    ]
+    const images = [];
+	
+	images.push(...getAlgorithmImgs());
+	
+	images.push(...getAndroidImgs());
+
+	images.push(...getDataStructureImgs());
+
+	images.push(...getGitImgs());
+	
+	images.push(...getJavaImgs());
+	
+	images.push(...getBlogImgs());
+	
+	images.push(...getPythonImgs());
+	
+	images.push(...getOtherImgs());
+	
 
 
-    fillTypes(types)
+    fillTypes(types);
 
-    fillImages(images, '../img/picbed/')
+    fillImages(images, '../img/picbed/');
 </script>
 <script src="../js/pics.js"></script>
 <script src="../js/include.js"></script>
