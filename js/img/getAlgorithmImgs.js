@@ -7,6 +7,9 @@ function getAlgorithmImgs(){
 		{src: '/same_tree/1.jpg', desc: 'same_tree_1', type: 'algorithm'},
 		{src: '/same_tree/2.jpg', desc: 'same_tree_2', type: 'algorithm'},
 		{src: '/same_tree/3.jpg', desc: 'same_tree_3', type: 'algorithm'},
+		{src: '/maximal_square/1.jpg', desc: 'maximal_square_1', type: 'algorithm'},
+		{src: '/maximal_square/2.jpg', desc: 'maximal_square_2', type: 'algorithm'},
+		
 		
     ]
 }
