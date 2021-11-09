@@ -15,6 +15,9 @@ function getBlogImgs(){
 		{src: '/eclipse_install_axis2_plugin/5.png', desc: 'eclipse_install_axis2_plugin_5', type: 'blog'},
 		{src: '/eclipse_install_axis2_plugin/6.png', desc: 'eclipse_install_axis2_plugin_6', type: 'blog'},
 		{src: '/eclipse_install_axis2_plugin/7.png', desc: 'eclipse_install_axis2_plugin_7', type: 'blog'},
+		
+		// echarts_legend_align
+		{src: '/echarts_legend_align/1.png', desc: 'echarts_legend_align_1', type: 'blog'},
 
     ]
 }
